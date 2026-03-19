@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bbase.ai — Pipeline Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #09090b;
+      color: #e4e4e7;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      max-width: 480px;
+      padding: 2rem;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(232, 115, 94, 0.1);
+      border: 1px solid rgba(232, 115, 94, 0.2);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #e8735e;
+      margin-bottom: 2rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .dot {
+      width: 6px;
+      height: 6px;
+      background: #e8735e;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fafafa;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    p {
+      font-size: 1rem;
+      color: #71717a;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #3f3f46;
+      border-top: 1px solid #1e1e24;
+      padding-top: 1.5rem;
+    }
+    .meta span { color: #52525b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="status"><div class="dot"></div>PIPELINE ACTIVE</div>
+    <h1>bbase.ai</h1>
+    <p>Deploy pipeline is live. Push to GitHub, auto-deploy to Cloudflare Pages. This page confirms the full path works.</p>
+    <div class="meta">
+      <span>deployed</span> via cloudflare pages<br>
+      <span>domain</span> test.bbase.ai
+    </div>
+  </div>
+</body>
+</html>
